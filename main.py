@@ -24,15 +24,6 @@ while True:
     # for i in response.headers:
     #     print("\n" + i + ":", response.headers.get(i))
 
-  
-
-    ## Get info
-    # if response.status_code == 200:
-    #     print('Status Code: 200')
-
-    # Status Header
-    # print(response.headers['Status'])
-
     again = input("Again? (y/n): ").lower()
     if again == 'y' or again == '':
         pass
