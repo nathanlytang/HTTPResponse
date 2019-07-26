@@ -6,7 +6,7 @@ Nathan Tang
 import requests
 
 while True:
-    site = input("Website: ")
+    site = input("\nWebsite: ")
     
     try:
         try:
@@ -14,17 +14,14 @@ while True:
         except:
             response = requests.get(f'http://{site}', timeout=5)
 
-        ## Get status code
+        # Get status code
         print(f'Status Code: {response.status_code}')
         print(response.reason)
 
     except:
         print('Not a website')
-    ## Get Headers
-    # for i in response.headers:
-    #     print("\n" + i + ":", response.headers.get(i))
 
-    again = input("Again? (y/n): ").lower()
+    again = input("\nAgain? (y/n): ").lower()
     if again == 'y' or again == '':
         pass
     else:
